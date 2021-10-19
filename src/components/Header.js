@@ -20,7 +20,10 @@ export default function Header() {
           <Link to="/schedule">Schedule</Link>
         </li>
         <li>
-          <Link to="/assignment">Submit Assignment</Link>
+          <Link to="/project">Submit Assignment</Link>
+        </li>
+        <li>
+          <Link to="/chat">Chat</Link>
         </li>
       </ul>
     </div>

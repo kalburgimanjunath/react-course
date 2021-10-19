@@ -1,8 +1,12 @@
 import React from 'react';
 import './style.css';
 import { Header, Footer, Topics } from './components/index';
+
 import Home from './pages/Home';
 import Course from './pages/Course';
+import Login from './pages/Login';
+import Project from './pages/Project';
+import Chat from './pages/Chat';
 import { Switch, Route, useParams, useRouteMatch } from 'react-router-dom';
 export default function App() {
   const course = {
@@ -21,6 +25,15 @@ export default function App() {
       <Switch>
         <Route path="/course/course" exact>
           <Course course={course} />
+        </Route>
+        <Route path="/login">
+          <Login />
+        </Route>
+        <Route path="/project">
+          <Project />
+        </Route>
+        <Route path="/chat">
+          <Chat />
         </Route>
         <Route path={`/course/:topicId`} children={<Topics />}></Route>
         <Route path="/*" exact>

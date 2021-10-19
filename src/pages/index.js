@@ -1,3 +1,5 @@
 import { Home } from './Home';
 import { Login } from './Login';
-export { Home, Login };
+import { Project } from './Project';
+import { Chat } from './Chat';
+export { Home, Login, Project, Chat };

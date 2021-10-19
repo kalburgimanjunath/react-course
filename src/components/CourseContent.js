@@ -21,10 +21,22 @@ export default function CourseContent() {
     { title: 'test lecture', text: 'test' },
   ];
 
+  // const data = [
+  //   {
+  //     'section 1': [
+  //       { title: 'test lecture1', text: 'test' },
+  //       { title: 'test lecture2', text: 'test' },
+  //     ],
+  //     'section 2': [
+  //       { title: 'test lecture3', text: 'test' },
+  //       { title: 'test lecture4', text: 'test' },
+  //     ],
+  //   },
+  // ];
   return (
     <div>
       <ul>
-        {sections.map((value) => {
+        {sections.map((value, key) => {
           return (
             <li>
               {value}
