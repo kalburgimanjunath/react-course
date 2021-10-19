@@ -1,4 +1,5 @@
 import React from 'react';
+import { CourseContent } from '../components/index';
 export default function Course({ course }) {
   return (
     <div>
@@ -18,6 +19,10 @@ export default function Course({ course }) {
       </div>
       <div>
         <h1>Course Content</h1>
+        <CourseContent />
+        <h1>Requirements</h1>
+        <h1>Description</h1>
+        <h1>Who this course is for</h1>
       </div>
     </div>
   );
