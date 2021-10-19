@@ -1,23 +1,24 @@
 import React from 'react';
-export default function Course({
-  title,
-  text,
-  preview_url,
-  rating,
-  author,
-  students,
-  last_updated,
-  language,
-}) {
-  const course = {
-    title: 'Create Personal Brand Niche Website without coding',
-    text: 'Using FREE Resources - Make Professional Personal Brand Website With Wordpress & Elementor',
-    preview_url: '',
-    rating: 5,
-    author: 'manjunath kalburgi',
-    students: 10,
-    last_updated: '2021-10-20',
-    language: 'english',
-  };
-  return <div>Course</div>;
+export default function Course({ course }) {
+  return (
+    <div>
+      <h1>{course.title}</h1>
+      <h3>{course.text}</h3>
+      <div>
+        <span>Rating:{course.rating}</span>
+        <span>Students:{course.students}</span>
+      </div>
+      <img src="" width="500" height="400" />
+      <div>
+        <span>Created by:{course.author}</span>
+      </div>
+      <div>
+        <span>Last updated on:{course.last_updated}</span>
+        <span> {course.language}</span>
+      </div>
+      <div>
+        <h1>Course Content</h1>
+      </div>
+    </div>
+  );
 }

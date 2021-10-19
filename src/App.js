@@ -5,12 +5,22 @@ import Home from './pages/Home';
 import Course from './pages/Course';
 import { Switch, Route, useParams, useRouteMatch } from 'react-router-dom';
 export default function App() {
+  const course = {
+    title: 'Create Personal Brand Niche Website without coding',
+    text: 'Using FREE Resources - Make Professional Personal Brand Website With Wordpress & Elementor',
+    preview_url: '',
+    rating: 5,
+    author: 'manjunath kalburgi',
+    students: 10,
+    last_updated: '2021-10-20',
+    language: 'english',
+  };
   return (
     <div>
       <Header />
       <Switch>
         <Route path="/course/course" exact>
-          <Course />
+          <Course course={course} />
         </Route>
         <Route path={`/course/:topicId`} children={<Topics />}></Route>
         <Route path="/*" exact>
