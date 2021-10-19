@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import Feature from './Feature';
 import Category from './Category';
 import Instructor from './Instructor';
+import AllCourses from './AllCourses';
 export default function Topics() {
   let { topicId } = useParams();
   return (
@@ -15,6 +16,7 @@ export default function Topics() {
       <Category title="Popular topics" />
       <h1>Popular Instructor</h1>
       <Instructor />
+      <AllCourses />
     </div>
   );
 }

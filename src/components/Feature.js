@@ -1,6 +1,6 @@
 import React from 'react';
 import Card from './Card';
-export default function Feature({ title }) {
+export default function Feature({ title, type }) {
   return (
     <>
       <div>{title}</div>
