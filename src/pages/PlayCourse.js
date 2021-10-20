@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutCourse, Player } from '../components/index';
+import { AboutCourse, Player, CourseContent } from '../components/index';
 export default function PlayCourse() {
   return (
     <div>
@@ -13,7 +13,7 @@ export default function PlayCourse() {
       </div>
       <div>
         <h1>Course Content</h1>
-        <h1>Course Content</h1>
+        <CourseContent type="sidebar" />
       </div>
     </div>
   );
