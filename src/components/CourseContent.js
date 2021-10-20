@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 export default function CourseContent() {
   const Lecture = ({ lecture }) => {
     return (
@@ -6,7 +7,9 @@ export default function CourseContent() {
         {lecture.map((item) => {
           return (
             <>
-              <div>{item.title}</div>
+              <Link>
+                <div>{item.title}</div>
+              </Link>
               <more>{item.text}</more>
             </>
           );
