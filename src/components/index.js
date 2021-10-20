@@ -6,6 +6,8 @@ import Card from './Card';
 import Feature from './Feature';
 import AllCourses from './AllCourses';
 import CourseContent from './CourseContent';
+import AboutCourse from './AboutCourse';
+import Player from './Player';
 export {
   Header,
   Footer,
@@ -15,4 +17,6 @@ export {
   Feature,
   AllCourses,
   CourseContent,
+  AboutCourse,
+  Player,
 };

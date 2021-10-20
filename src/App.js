@@ -7,6 +7,7 @@ import Course from './pages/Course';
 import Login from './pages/Login';
 import Project from './pages/Project';
 import Chat from './pages/Chat';
+import PlayCourse from './pages/PlayCourse';
 import { Switch, Route, useParams, useRouteMatch } from 'react-router-dom';
 export default function App() {
   const course = {
@@ -34,6 +35,9 @@ export default function App() {
         </Route>
         <Route path="/chat">
           <Chat />
+        </Route>
+        <Route path="/playcourse">
+          <PlayCourse />
         </Route>
         <Route path={`/course/:topicId`} children={<Topics />}></Route>
         <Route path="/*" exact>

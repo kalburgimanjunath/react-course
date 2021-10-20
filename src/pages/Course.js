@@ -1,5 +1,6 @@
 import React from 'react';
 import { CourseContent } from '../components/index';
+import { Link } from 'react-router-dom';
 export default function Course({ course }) {
   return (
     <div>
@@ -9,7 +10,9 @@ export default function Course({ course }) {
         <span>Rating:{course.rating}</span>
         <span>Students:{course.students}</span>
       </div>
-      <img src="" width="500" height="400" />
+      <Link to="../playcourse">
+        <img src="" width="500" height="400" />
+      </Link>
       <div>
         <span>Created by:{course.author}</span>
       </div>

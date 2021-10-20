@@ -1,7 +1,6 @@
 import React from 'react';
 export default function CourseContent() {
   const Lecture = ({ lecture }) => {
-    console.log(lecture);
     return (
       <div>
         {lecture.map((item) => {
