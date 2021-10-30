@@ -1,5 +1,2 @@
-@import "assets/vendor/"
-h1,
-p {
-  font-family: Lato;
-}
+@import './assets/vendor/bootstrap/css/bootstrap.css';
+@import './assets/css/';
